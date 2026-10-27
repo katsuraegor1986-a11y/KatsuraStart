@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080808">
+  <title>Егор Кацура — загрузка сайта</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background: #080808;
+      color: #f4e2b5;
+      font-family: Arial, sans-serif;
+    }
+
+    .loader {
+      width: 100%;
+      padding: 30px;
+      text-align: center;
+      animation: appear 1.2s ease both;
+    }
+
+    .line {
+      width: 90px;
+      height: 2px;
+      margin: 0 auto 30px;
+      background: linear-gradient(90deg, transparent, #d6b36a, transparent);
+      animation: glow 2s infinite;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(32px, 7vw, 64px);
+      font-weight: 400;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+
+    .subtitle {
+      margin-top: 18px;
+      font-size: 12px;
+      letter-spacing: .35em;
+      text-transform: uppercase;
+      color: #b99a5b;
+    }
+
+    .status {
+      margin-top: 60px;
+      color: #a9a18f;
+      font-size: 12px;
+      letter-spacing: .12em;
+    }
+
+    .progress {
+      width: min(280px, 70vw);
+      height: 2px;
+      margin: 18px auto;
+      background: #29251d;
+      overflow: hidden;
+    }
+
+    .progress span {
+      display: block;
+      width: 35%;
+      height: 100%;
+      background: #d6b36a;
+      animation: loading 1.6s ease-in-out infinite;
